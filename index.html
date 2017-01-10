@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title><?php echo $app['title']; ?></title>
+    <meta charset="utf-8">
+    <!-- Set preload resources (https://w3c.github.io/resource-hints/)-->
+    <link rel="prefetch" href="fonts/airport/regular/Airport.otf">
+    <!-- Main Meta information-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="<?php echo $app['description']; ?>">
+    <meta name="author" content="">
+    <!-- Meta Information-->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Russian">
+    <meta name="msapplication-tooltip" content="<?php echo $app['title']; ?>">
+    <meta name="msapplication-starturl" content="<?php echo $app['domain']; ?>">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Add to homescreen for Chrome on Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="<?php echo $app['title']; ?>">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <!-- Add to homescreen for Safari on iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="<?php echo $app['title']; ?>">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <!-- Web Application Manifest-->
+    <link rel="manifest" href="manifest.json">
+    <!-- Tile icon for Win8 (144x144 + title color)-->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- OpenGraph microformat-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?php echo $app['title']; ?>">
+    <meta property="og:site_name" content="<?php echo $app['title']; ?>">
+    <meta property="og:url" content="<?php echo $app['domain']; ?>">
+    <meta property="og:description" content="<?php echo $app['description']; ?>">
+    <meta property="og:image" content="">
+    <!-- Twitter microformat-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="<?php echo $app['domain']; ?>">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="<?php echo $app['title']; ?>">
+    <meta name="twitter:description" content="<?php echo $app['description']; ?>">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:domain" content="<?php echo $app['domain']; ?>">
+    <link rel="canonical" href="/">
+    <link rel="image_src" href="#">
+    <link rel="shortlink" href="#">
+    <link type="text/plain" rel="author" href="humans.txt">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Site verification-->
+    <meta name="google-site-verification" content="<?php echo $app['googleSiteVerification']; ?>">
+    <meta name="yandex-verification" content="<?php echo $app['yandexVerification']; ?>">
+    <!-- Facebook Pixel Code-->
+    <script>
+      !function (f, b, e, v, n, t, s) {
+          if (f.fbq)return;
+          n = f.fbq = function () {
+              n.callMethod ?
+                      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq)f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = '2.0';
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+      }(window,
+              document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '<?php echo $app['facebookPixel']; ?>', {
+          em: 'insert_email_variable,'
+      });
+      fbq('track', 'PageView');
+      fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=<?php echo $app['facebookPixel']; ?>&ev=PageView&noscript=1"></noscript>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="column -xs-2 _pl0">
+            <div class="page-logo"><img src="img/pics/logo.png" alt="<?php echo $app['title']; ?>"></div>
+          </div>
+          <div class="column -xs-3">
+            <div class="contacts"><a class="link -phone" href="tel:88006005454" title="Позвоните нам бесплатно">8 800 600 54 54</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a></div>
+          </div>
+          <div class="column -xs-7 _pr0 _pl0 -xs-stretch">
+            <ul class="menu">
+              <li class="item"><a class="link -emergency" href="#emergency" title="Экстренная помощь"><span>Экстренная помощь</span></a></li>
+              <li class="item"><a class="link -about" href="" title="О Нас"><span>О Нас</span></a></li>
+              <li class="item"><a class="link -building" href="#services" title="Недвижимость"><span>Недвижимость</span></a></li>
+              <li class="item"><a class="link -justice" href="#services" title="Юристы"><span>Юристы</span></a></li>
+              <li class="item"><a class="link -advantages" href="#advantages" title="Преимущества"><span>Преимущества</span></a></li>
+              <li class="item"><a class="link -contacts" href="#contacts" title="Контакты"><span>Контакты</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="lead-banner">
+        <div class="container _h100">
+          <div class="row _h100">
+            <div class="column -xs-5 _d-flex _justify-right _align-center">
+              <div class="logo">
+                <div class="page-logo"><img src="img/pics/logo-white.png" alt="<?php echo $app['title']; ?>"></div>
+              </div>
+            </div>
+            <div class="column -xs-6 _d-flex _justify-right _align-bottom">
+              <div class="text"><span>Когда работа</span><span>приносит</span><span>удовольствие</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="page-text">
+        <div class="container">
+          <div class="row">
+            <div class="column -xs-12">
+              <h2 class="h2-title" id="emergency">Экстренная кнопка</h2>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column -xs-12">
+              <div class="action"><a class="btn" href="javascript:void(0)" title="НАЖМИТЕ"><span>НАЖМИТЕ</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-text">
+        <div class="container">
+          <div class="row">
+            <section class="column -xs-12">
+              <h2 class="h2-title">О НАС</h2>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+              <div class="action">
+                <div class="page-logo"><img src="img/pics/logo.png" alt="<?php echo $app['title']; ?>"></div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="page-services" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="column -xs-12">
+              <h2 class="h2-title">НАШИ УСЛУГИ</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column -xs-12 -md-6 _p0">
+                    <figure class="service-block">
+                      <div class="front">
+                        <h3>Недвижимость</h3><img class="img" src="img/pics/service-1.png" alt="Недвижимость">
+                      </div>
+                      <figcaption class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p><a class="btn" href="javascript:void(0)" title="Получить консультацию"><span>Получить консультацию</span></a>
+                      </figcaption>
+                    </figure>
+            </div>
+            <div class="column -xs-12 -md-6 _p0">
+                    <figure class="service-block">
+                      <div class="front">
+                        <h3>Юридические <br/> услуги</h3><img class="img" src="img/pics/service-2.png" alt="Юридические &lt;br/&gt; услуги">
+                      </div>
+                      <figcaption class="caption">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p><a class="btn" href="javascript:void(0)" title="Получить консультацию"><span>Получить консультацию</span></a>
+                      </figcaption>
+                    </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-advantages">
+        <div class="container">
+          <div class="row">
+            <div class="column -xs-12">
+              <h2 class="h2-title" id="advantages">Наши преимущества</h2>
+            </div>
+          </div>
+          <div class="row wow slideInLeft">
+            <div class="column -xs-12 -sm-6 -md-4">
+                    <article class="advantage-block"><img src="img/pics/team.png" alt="Команда">
+                      <h3>Команда</h3>
+                      <p>Работаем только с профессионалами</p>
+                    </article>
+            </div>
+            <div class="column -xs-12 -sm-6 -md-4">
+                    <article class="advantage-block"><img src="img/pics/info.png" alt="Информативность">
+                      <h3>Информативность</h3>
+                      <p>Вы будете знать о каждом шаге и его результате незамедлительно</p>
+                    </article>
+            </div>
+            <div class="column -xs-12 -sm-6 -md-4">
+                    <article class="advantage-block"><img src="img/pics/initional.png" alt="Инициативность">
+                      <h3>Инициативность</h3>
+                      <p>Всегда предложим несколько вариантов решения любой задачи</p>
+                    </article>
+            </div>
+          </div>
+          <div class="row wow slideInRight">
+            <div class="column -xs-12 -sm-6 -md-4">
+                    <article class="advantage-block"><img src="img/pics/mim.png" alt="Посредники">
+                      <h3>Посредники</h3>
+                      <p>Мы работаем без них</p>
+                    </article>
+            </div>
+            <div class="column -xs-12 -sm-6 -md-4">
+                    <article class="advantage-block"><img src="img/pics/reliability.png" alt="Надежность">
+                      <h3>Надежность</h3>
+                      <p>Деловая репутация для нас не пустое слово. Мы гордимся и дорожим своими клиентами</p>
+                    </article>
+            </div>
+            <div class="column -xs-12 -sm-6 -md-4">
+                    <article class="advantage-block"><img src="img/pics/complicity.png" alt="Сопричастность">
+                      <h3>Сопричастность</h3>
+                      <p>Ваш успех - наша цель!</p>
+                    </article>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column -xs-12">
+              <div class="action"><a class="btn" href="javascript:void(0)" title="Получить консультацию"><span>Получить консультацию</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="map" id="map"></div>
+    </footer>
+    <div class="scripts">
+      <script src="http://maps.google.com/maps/api/js"></script>
+      <script src="js/app.js"></script>
+      <!-- Google Analytics-->
+      <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '<?php echo $app['googleAnalytics'] ?>', 'auto');
+        ga('send', 'pageview');
+      </script>
+      <!-- Yandex.Metrika counter-->
+      <script>
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter<?php echo $app['yandexMetrika'] ?> = new Ya.Metrika(
+                            {
+                                id: 41772859,
+                                clickmap: true,
+                                trackLinks: true,
+                                accurateTrackBounce: true,
+                                webvisor: true
+                            });
+                }
+                catch (e) {
+                }
+            });
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () {
+                        n.parentNode.insertBefore(s, n);
+                    };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            }
+            else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+      </script>
+      <noscript>
+        <div><img src="https://mc.yandex.ru/watch/<?php echo $app['yandexMetrika'] ?>" style="position:absolute; left:-9999px" alt=""></div>
+      </noscript>
+    </div>
+  </body>
+  <!---->
+  <!--    .svg-sprite._hide-->
+  <!--        //include ../../../build/svg/sprite/sprite.svg-->
+</html>

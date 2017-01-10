@@ -1703,6 +1703,10 @@ footer.page-footer .map {
   height: 580px;
 }
 
+footer.page-footer .entity p {
+  font-size: 12px;
+}
+
 @font-face {
   font-family:'Airport-Regular';src:url('../fonts/airport/regular/Airport.eot'),local('Airport-Regular');src:url('../fonts/airport/regular/Airport.eot?#iefix') format('embedded-opentype'),local('Airport-Regular'),url('../fonts/airport/regular/Airport.woff') format('woff'),url('../fonts/airport/regular/Airport.ttf') format('truetype'),url('../fonts/airport/regular/Airport.svg#Airport-Regular') format('svg');
 }

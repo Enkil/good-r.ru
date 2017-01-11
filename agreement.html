@@ -100,13 +100,13 @@
     <header class="page-header">
       <div class="container">
         <div class="row">
-          <div class="column -xs-2 _pl0">
+          <div class="column -xs-4 -md-2 _pl0">
             <div class="page-logo"><img src="img/pics/logo.png" alt="<?php echo $app['title']; ?>"></div>
           </div>
-          <div class="column -xs-3">
+          <div class="column -xs-8 -md-3">
             <div class="contacts"><a class="link -phone" href="tel:88006005454" title="Позвоните нам бесплатно">8 800 600 54 54</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a></div>
           </div>
-          <div class="column -xs-7 _pr0 _pl0 -xs-stretch">
+          <div class="column -xs-7 _pr0 _pl0 -xs-stretch _sm-hidden-down">
             <ul class="menu">
               <li class="item"><a class="link -emergency" href="index.html#emergency" title="Экстренная помощь"><span>Экстренная помощь</span></a></li>
               <li class="item"><a class="link -about" href="index.html#about" title="О Нас"><span>О Нас</span></a></li>
@@ -172,19 +172,19 @@
             </div>
           </div>
           <div class="row wow slideInLeft">
-            <div class="column -xs-12 -sm-6 -md-4">
+            <div class="column -xs-12 -sm-4">
                     <article class="advantage-block"><img src="img/pics/team.png" alt="Команда">
                       <h3>Команда</h3>
                       <p>Работаем только с профессионалами</p>
                     </article>
             </div>
-            <div class="column -xs-12 -sm-6 -md-4">
+            <div class="column -xs-12 -sm-4">
                     <article class="advantage-block"><img src="img/pics/info.png" alt="Информативность">
                       <h3>Информативность</h3>
                       <p>Вы будете знать о каждом шаге и его результате незамедлительно</p>
                     </article>
             </div>
-            <div class="column -xs-12 -sm-6 -md-4">
+            <div class="column -xs-12 -sm-4">
                     <article class="advantage-block"><img src="img/pics/initional.png" alt="Инициативность">
                       <h3>Инициативность</h3>
                       <p>Всегда предложим несколько вариантов решения любой задачи</p>
@@ -192,19 +192,19 @@
             </div>
           </div>
           <div class="row wow slideInRight">
-            <div class="column -xs-12 -sm-6 -md-4">
+            <div class="column -xs-12 -sm-4">
                     <article class="advantage-block"><img src="img/pics/mim.png" alt="Посредники">
                       <h3>Посредники</h3>
                       <p>Мы работаем без них</p>
                     </article>
             </div>
-            <div class="column -xs-12 -sm-6 -md-4">
+            <div class="column -xs-12 -sm-4">
                     <article class="advantage-block"><img src="img/pics/reliability.png" alt="Надежность">
                       <h3>Надежность</h3>
                       <p>Деловая репутация для нас не пустое слово. Мы гордимся и дорожим своими клиентами</p>
                     </article>
             </div>
-            <div class="column -xs-12 -sm-6 -md-4">
+            <div class="column -xs-12 -sm-4">
                     <article class="advantage-block"><img src="img/pics/complicity.png" alt="Сопричастность">
                       <h3>Сопричастность</h3>
                       <p>Ваш успех - наша цель!</p>
@@ -212,7 +212,7 @@
             </div>
           </div>
           <div class="row _justify-center">
-            <div class="column -xs-5">
+            <div class="column -xs-12 -md-8 -xl-5">
               <div class="action"><a class="btn js-openModal" href="javascript:void(0)" title="Получить консультацию" id=""><span>Получить консультацию</span></a>
               </div>
             </div>
@@ -224,30 +224,37 @@
       <div class="map-block">
         <div class="map" id="map"></div>
         <div class="container contacts-block">
-          <div class="row">
+          <div class="row _justify-center">
             <div class="column -xs-3">
               <div class="page-logo"><img src="img/pics/logo-white.png" alt="<?php echo $app['title']; ?>"></div>
             </div>
-            <div class="column -xs-3 -xs-offset-1">
+            <div class="column -xs-12 -md-4 -lg-3 -lg-offset-1">
               <p class="address">
                 Москва
                 <br/>
                 Черноморский бульвар, д.4
               </p><a class="link -phone" href="tel:88006005454" title="Позвоните нам бесплатно">8 800 698 54 54</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a>
             </div>
-            <div class="column -xs-4 -xs-offset-1">
+            <div class="column -xs-12 -md-5 -lg-4 -lg-offset-1">
                   <form class="page-form -footer" method="post" action="form.php">
-                    <h4>Остались вопросы? Мы будем рады ответить!</h4>
-                    <label class="-name">
-                      <input type="text" name="name" placeholder="Ваше имя" required>
-                    </label>
-                    <label class="-phone">
-                      <input type="tel" name="phone" placeholder="+7(999)999-99-99" required>
-                    </label>
-                    <label>
-                      <input type="hidden" name="formName" value="Форма в подвале">
-                    </label>
-                    <button>Заказать звонок</button>
+                    <div class="form">
+                      <h4>Остались вопросы? Мы будем рады ответить!</h4>
+                      <label class="-name">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                      </label>
+                      <label class="-phone">
+                        <input type="tel" name="phone" placeholder="+7(999)999-99-99" required>
+                      </label>
+                      <label>
+                        <input type="hidden" name="formname" value="Форма в подвале">
+                      </label>
+                      <button>Заказать звонок</button>
+                    </div>
+                    <p class="success">
+                      Спасибо за обращение!
+                      <br>
+                      Наш специалист свяжется с вами.
+                    </p>
                   </form>
             </div>
           </div>
@@ -270,17 +277,24 @@
             <div class="column -xs-6 _text-center">
               <div class="page-logo"><img src="img/pics/logo-white.png" alt="<?php echo $app['title']; ?>"></div>
                   <form class="page-form -modal" method="post" action="form.php">
-                    <h4>Оставьте ваши контактные данные и мы свяжемся с вами через 2 минуты!</h4>
-                    <label class="-name">
-                      <input type="text" name="name" placeholder="Ваше имя" required>
-                    </label>
-                    <label class="-phone">
-                      <input type="tel" name="phone" placeholder="+7(999)999-99-99" required>
-                    </label>
-                    <label>
-                      <input type="hidden" name="formName" value="Форма в модальном окне">
-                    </label>
-                    <button>Заказать звонок</button>
+                    <div class="form">
+                      <h4>Оставьте ваши контактные данные и мы свяжемся с вами через 2 минуты!</h4>
+                      <label class="-name">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                      </label>
+                      <label class="-phone">
+                        <input type="tel" name="phone" placeholder="+7(999)999-99-99" required>
+                      </label>
+                      <label>
+                        <input type="hidden" name="formname" value="Форма в модальном окне">
+                      </label>
+                      <button>Заказать звонок</button>
+                    </div>
+                    <p class="success">
+                      Спасибо за обращение!
+                      <br>
+                      Наш специалист свяжется с вами.
+                    </p>
                   </form>
             </div>
           </div>

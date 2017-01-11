@@ -17588,7 +17588,8 @@ $(document).ready(function () {
                         .find("button")
                         .prop('disabled', true);
                     $(this)[0].reset();
-                    $(this).find("span.form__success").css({'display': 'block'});
+                    $(this).find("div.form").css({'display': 'none'});
+                    $(this).find("p.success").css({'display': 'block'});
                 }
             });
         }

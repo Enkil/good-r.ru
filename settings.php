@@ -6,8 +6,8 @@ ini_set("display_startup_errors", 1);
 
 mb_internal_encoding("UTF-8");
 
-$app['title'] = 'Подарочный календарь с Путиным на 2017 год - универсальный подарок успешным людям!';
-$app['description'] = 'Подарочный календарь с Путиным на 2017 год - универсальный подарок успешным людям!';
+$app['title'] = 'Бизнес решения';
+$app['description'] = 'Бизнес решения - когда работа в удовольствие!';
 $app['domain'] = "http://".$_SERVER['SERVER_NAME'];
 $app['googleSiteVerification'] = '';
 $app['yandexVerification'] = '';
@@ -24,7 +24,7 @@ $settings['smsMessage'] = " ";
 
 $settings['EmailRecipients'] = ['timohin.i@gmail.com','office@good-r.ru'];
 $settings['EmailReplyTo'] = ['office@good-r.ru'];
-$settings['EmailFrom'] = "GOOD-R";
+$settings['EmailFrom'] = "office@good-r.ru";
 $settings['EmailSubject'] = "Новая заявка с сайта ". $_SERVER['SERVER_NAME'] ."";
 $settings['EmailSMTPHosts'] = '';
 $settings['EmailSMTPUser'] = '';

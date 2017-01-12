@@ -64,7 +64,7 @@
     <link rel="image_src" href="#">
     <link rel="shortlink" href="#">
     <link type="text/plain" rel="author" href="humans.txt">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app.min.css">
     <!-- Site verification-->
     <meta name="google-site-verification" content="<?php echo $app['googleSiteVerification']; ?>">
     <meta name="yandex-verification" content="<?php echo $app['yandexVerification']; ?>">
@@ -108,8 +108,8 @@
           </div>
           <div class="column -xs-7 _pr0 _pl0 -xs-stretch _sm-hidden-down">
             <ul class="menu">
-              <li class="item"><a class="link -emergency" href="index.html#emergency" title="Экстренная помощь"><span>Экстренная помощь</span></a></li>
-              <li class="item"><a class="link -about" href="index.html#about" title="О Нас"><span>О Нас</span></a></li>
+              <li class="item"><a class="link -emergency" href="index.php#emergency" title="Экстренная помощь"><span>Экстренная помощь</span></a></li>
+              <li class="item"><a class="link -about" href="index.php#about" title="О Нас"><span>О Нас</span></a></li>
               <li class="item"><a class="link -building" href="#services" title="Недвижимость"><span>Недвижимость</span></a></li>
               <li class="item"><a class="link -justice" href="#services" title="Юристы"><span>Юристы</span></a></li>
               <li class="item"><a class="link -advantages" href="#advantages" title="Преимущества"><span>Преимущества</span></a></li>
@@ -125,7 +125,7 @@
           <div class="row">
             <section class="column -xs-12">
               <h2 class="h2-title" id="agreement">Соглашение об обрабтке персональных данных</h2>
-              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+              <div class="text"><p>Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской Федерации.<br><br>Все лица заполнившие сведения, составляющие персональные данные на данном сайте, а также разместившие иную информацию обозначенными действиями подтверждают свое согласие на обработку персональных данных и их передачу оператору обработки персональных данных.<br><br>Под персональными данными Гражданина понимается нижеуказанная информация:<br><br>общая информация (Имя, телефон и адрес электронной почты); посетители сайта направляют свои персональные данные для получения услуг расчёта стоимости заказа.<br><br>Гражданин, принимая настоящее Соглашение, выражают свою заинтересованность и полное согласие, что обработка их персональных данных может включать в себя следующие действия: сбор, систематизацию, накопление, хранение, уточнение(обновление, изменение), использование, уничтожение.<br><br>Гражданин гарантирует: информация, им предоставленная, является полной, точной и достоверной; при предоставлении информации не нарушается действующее законодательство Российской Федерации, законные права и интересы третьих лиц; вся предоставленная информация заполнена Гражданина в отношении себя лично.</p></div>
               <div class="action">
                 <div class="page-logo"><img src="img/pics/logo.png" alt="<?php echo $app['title']; ?>"></div>
               </div>
@@ -147,7 +147,7 @@
                         <h3>Недвижимость</h3><img class="img" src="img/pics/service-1.png" alt="Недвижимость">
                       </div>
                       <figcaption class="caption">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p><a class="btn js-openModal" href="javascript:void(0)" title="Получить консультацию" id=""><span>Получить консультацию</span></a>
+                        <div class="text"><p> - Вы арендуете недвижимость у Департамента городского имущества г. Москвы и хотели бы приобрести недвижимость в собственность;</p><p> -Вы хотите арендовать помещение (здание) или выкупить его через аукцион;</p><p> - Вы хотите продать права аренды или продать договор купли-продажи;</p><p> - Вам отказывают из-за неузаконенной перепланировки, окончания срока действия договора (если заявление на выкуп до его окончания), отказываются продлевать договор аренды</p><p>Мы готовы Вам помочь!</p><p>Пошаговая проработка стратегии, подготовка и подача документов, проведение оценки, оптимизация стоимости недвижимости, представление Ваших интересов в суде.</p></div><a class="btn js-openModal" href="javascript:void(0)" title="Получить консультацию" id=""><span>Получить консультацию</span></a>
                       </figcaption>
                     </figure>
             </div>
@@ -157,7 +157,7 @@
                         <h3>Юридические <br/> услуги</h3><img class="img" src="img/pics/service-2.png" alt="Юридические &lt;br/&gt; услуги">
                       </div>
                       <figcaption class="caption">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p><a class="btn js-openModal" href="javascript:void(0)" title="Получить консультацию" id=""><span>Получить консультацию</span></a>
+                        <div class="text"><p>Решение обратиться к юристу или адвокату всегда является сиюминутной безотлагательной необходимостью, связанной с бизнесом, решением семейных и личных вопросов, ограничением свободы и других,не терпящих отсрочки дел.</p><p> «Бизнес Решения» предоставляют услуги специалистов высокого уровня в уголовном и гражданском праве.</p><p> - Автоюристы – возврат водительского удостоверения при лишении, снятие ареста с автомобиля;</p><p> - Адвокаты уголовного права – представление интересов на всех стадиях уголовного процесса, смягчение приговора, защита от давления следствия и т.д.;</p><p> - Арбитражный юрист – представление интересов Вашего бизнеса;</p><p> - Земельные споры, взыскание долгов, жилищные споры, наследственные дела, раздел имущества и т.д.</p></div><a class="btn js-openModal" href="javascript:void(0)" title="Получить консультацию" id=""><span>Получить консультацию</span></a>
                       </figcaption>
                     </figure>
             </div>
@@ -175,7 +175,7 @@
             <div class="column -xs-12 -sm-4">
                     <article class="advantage-block"><img src="img/pics/team.png" alt="Команда">
                       <h3>Команда</h3>
-                      <p>Работаем только с профессионалами</p>
+                      <p>Работаем только с профессионалами в своей области</p>
                     </article>
             </div>
             <div class="column -xs-12 -sm-4">
@@ -264,7 +264,7 @@
         <div class="row">
           <div class="column -xs-12">
             <div class="entity">
-              <p>Индивидуальный предприниматель Евтушенко Антон Александрович, ОГРНИП:315774600172601, ИНН:772072860002<br><a href="agreement.html">Соглашение об обработке персональных данных</a></p>
+              <p>Индивидуальный предприниматель Евтушенко Антон Александрович, ОГРНИП:315774600172601, ИНН:772072860002<br><a href="agreement.php">Соглашение об обработке персональных данных</a></p>
             </div>
           </div>
         </div>

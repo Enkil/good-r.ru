@@ -64,7 +64,7 @@ function sendEmail($settings,$body){
     $mail = new PHPMailer();
 
     $mail->CharSet = 'UTF-8';
-    $mail->setFrom('dk@regnum.ru', 'Regnum.ru');
+    $mail->setFrom($settings['EmailFrom'] = "office@good-r.ru", '');
 
     array_map(function ($email) use ($mail){
         $mail->addAddress($email);
@@ -86,7 +86,7 @@ function sendEmail($settings,$body){
 }
 
 function sendSms($settings,$data){
-    return file_get_contents("http://sms.ru/sms/send?api_id=".$settings['smsRuApiKey']."&to=". $settings['smsRecipietns'] ."&text=".urlencode("Заявка от {$data['name']},'.{$data['email']}.','.{$data['phone']}."));
+    return file_get_contents("http://sms.ru/sms/send?api_id=".$settings['smsRuApiKey']."&to=". $settings['smsRecipietns'] ."&text=".urlencode("Заявка от {$data['name']},'.{$data['phone']}."));
 }
 
 function insertRowInGoogleSpreadSheet($listFeed,$today,$data,$country,$city,$region,$utm,$referer){

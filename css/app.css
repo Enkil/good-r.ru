@@ -1267,14 +1267,19 @@ h2.h2-title {
   text-align: center;
 }
 
-p.text {
+div.text p {
   font-family: 'Calibri-Regular',sans-serif;
   font-size: 30px;
   font-weight: normal;
   font-style: normal;
   line-height: 48px;
   margin: 0;
+  margin-bottom: 50px;
   text-align: center;
+}
+
+div.text span.attention {
+  color: red;
 }
 
 :root {
@@ -1409,28 +1414,28 @@ body {
   width: 52px;
   height: 52px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -106px -65px;
+  background-position: -53px -65px;
 }
 
 .page-header ul.menu li.item a.link.-justice:before {
   width: 45px;
   height: 45px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -46px -161px;
+  background-position: -99px -118px;
 }
 
 .page-header ul.menu li.item a.link.-advantages:before {
   width: 52px;
   height: 52px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: 0 -65px;
+  background-position: 0 -118px;
 }
 
 .page-header ul.menu li.item a.link.-contacts:before {
   width: 52px;
   height: 52px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -163px -53px;
+  background-position: -163px 0;
 }
 
 .page-header ul.menu li.item a.link.-emergency:hover {
@@ -1450,28 +1455,28 @@ body {
   width: 52px;
   height: 52px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -53px -65px;
+  background-position: 0 -65px;
 }
 
 .page-header ul.menu li.item a.link.-justice:hover:before {
   width: 45px;
   height: 45px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: 0 -161px;
+  background-position: -53px -118px;
 }
 
 .page-header ul.menu li.item a.link.-advantages:hover:before {
   width: 52px;
   height: 52px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -163px 0;
+  background-position: -106px -65px;
 }
 
 .page-header ul.menu li.item a.link.-contacts:hover:before {
   width: 52px;
-  height: 42px;
+  height: 52px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: 0 -118px;
+  background-position: -163px -53px;
 }
 
 .page-logo {
@@ -1660,9 +1665,14 @@ figure.service-block figcaption.caption {
   backface-visibility: hidden;
 }
 
-figure.service-block figcaption.caption p {
-  font-size: 32px;
+figure.service-block figcaption.caption .text p {
+  font-family: 'Calibri-Regular',sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
   line-height: 1;
+  margin-bottom: 12px;
+  text-align: left;
   color: #fff;
 }
 
@@ -1760,7 +1770,7 @@ footer.page-footer .contacts-block a.link.-email:before {
   width: 37px;
   height: 25px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -53px -118px;
+  background-position: -145px -118px;
 }
 
 footer.page-footer .contacts-block a.link.-phone:before {
@@ -1768,7 +1778,7 @@ footer.page-footer .contacts-block a.link.-phone:before {
   height: 37px;
   margin-right: 25px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -92px -161px;
+  background-position: 0 -171px;
 }
 
 footer.page-footer .map {
@@ -1825,7 +1835,7 @@ form.page-form label.-name:before {
   width: 24px;
   height: 26px;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -140px -161px;
+  background-position: -48px -171px;
 }
 
 form.page-form label.-phone:before {
@@ -1965,7 +1975,7 @@ form.page-form button:active {
   transition: all .325s ease 0s;
   opacity: .7;
   background-image: url('../img/sprite/png-sprite.png');
-  background-position: -113px -161px;
+  background-position: -21px -171px;
 }
 
 .modal-block span.close:hover {
@@ -1996,8 +2006,8 @@ form.page-form button:active {
 }
 
 @media (min-width: 33.75em) and (max-width: 80em) {
-  figure.service-block figcaption.caption p {
-    font-size: 28px;
+  figure.service-block figcaption.caption .text p {
+    font-size: 18px;
   }
 }
 
@@ -3760,8 +3770,8 @@ form.page-form button:active {
     font-size: 30px;
   }
 
-  figure.service-block figcaption.caption p {
-    font-size: 22px;
+  figure.service-block figcaption.caption .text p {
+    font-size: 26px;
   }
 
   figure.service-block figcaption.caption .btn span {
@@ -6678,5 +6688,3 @@ form.page-form button:active {
     transform: translate3d(0, -100%, 0);
   }
 }
-
-/*# sourceMappingURL=../maps/app.css.map */

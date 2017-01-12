@@ -4,8 +4,8 @@ require_once ('vendor/autoload.php');
 //require_once ('vendor/google/apiclient/src/Google/autoload.php');
 require_once ('settings.php');
 require_once ('functions.php');
-//require_once ('services/google.php');
-require_once ('services/sypex.php');
+//require_once ('google.php');
+require_once ('sypex.php');
 
 
 if(isset($_POST['formname']))
@@ -28,7 +28,7 @@ if(isset($_POST['formname']))
         file_get_contents('mail.html')
     );
 
-    // Send
+    // 
     sendEmail($settings,$body);
     sendSms($settings,$data);
 //    insertRowInGoogleSpreadSheet($listFeed,$today,$data,$country,$city,$region,$utm,$referer);

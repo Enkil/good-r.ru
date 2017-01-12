@@ -953,7 +953,7 @@ figure.service-block figcaption.caption {
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  padding: 120px 60px 15px;
+  padding: 60px 60px 15px;
 }
 
 figure.service-block figcaption.caption .text p {

@@ -11,6 +11,7 @@ UtmCookie::setOverwrite(true);
 $dateInterval = DateInterval::createFromDateString('1 day');
 UtmCookie::setLifetime($dateInterval);
 ?>
+
 <!DOCTYPE html>
 <html lang="ru" prefix="og: http://ogp.me/ns#">
   <head>
@@ -81,6 +82,7 @@ UtmCookie::setLifetime($dateInterval);
     <!-- Site verification-->
     <meta name="google-site-verification" content="<?php echo $app['googleSiteVerification']; ?>">
     <meta name="yandex-verification" content="<?php echo $app['yandexVerification']; ?>">
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyDC7oVgGyj6bCsHZQaFH8m-6z1kJcvx7IY"></script>
     <!-- Facebook Pixel Code-->
     <script>
       !function (f, b, e, v, n, t, s) {
@@ -117,7 +119,7 @@ UtmCookie::setLifetime($dateInterval);
             <div class="page-logo"><img src="img/pics/logo.png" alt="<?php echo $app['title']; ?>"></div>
           </div>
           <div class="column -xs-8 -md-3">
-            <div class="contacts"><a class="link -phone" href="tel:84955041917" title="Позвоните нам бесплатно">8 495 504 19 17</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a></div>
+            <div class="contacts"><a class="link -phone" href="tel:84956659224" title="Позвоните нам бесплатно">8 495 665 92 24</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a></div>
           </div>
           <div class="column -xs-7 _pr0 _pl0 -xs-stretch _sm-hidden-down">
             <ul class="menu">
@@ -168,7 +170,7 @@ UtmCookie::setLifetime($dateInterval);
           <div class="row">
             <section class="column -xs-12">
                     <h2 class="h2-title" id="about">О НАС</h2>
-                    <div class="text"><p>«Бизнес Решения» приветствуют Вас на нашем сайте.</p><p> Мы  молодая, активно развивающая компания в сфере консалтинга коммерческой недвижимости и оказания юридических услуг.  Несколько лет назад мы сами нуждались в помощи при выкупе помещения у Департамента городского имущества города Москвы и в соответствующих юридических консультациях. Не найдя хороших специалистов и самостоятельно пройдя весь путь от начала и до конца, было принято решение создать «Бизнес Решения» и оказывать квалифицированную помощь в данной области всем нуждающимся людям.</p><p>Со временем, мы поняли что задачи, которые ставят перед нами клиенты, часто выходят за рамки  юридических вопросов в сфере коммерческой недвижимости и иногда касаются гражданского или даже уголовного права. Поэтому мы нашли специалистов с успешной практикой в данных областях, чтобы качественно оказывать полный спектр необходимых услуг.</p></div>
+                    <div class="text"><p>«Бизнес Решения» приветствуют Вас на нашем сайте.</p><p> Мы  молодая, активно развивающаяся компания в сфере консалтинга коммерческой недвижимости и оказания юридических услуг.  Несколько лет назад мы сами нуждались в помощи при выкупе помещения у Департамента городского имущества города Москвы и в соответствующих юридических консультациях. Не найдя хороших специалистов и самостоятельно пройдя весь путь от начала и до конца, было принято решение создать «Бизнес Решения» и оказывать квалифицированную помощь в данной области всем нуждающимся людям.</p><p>Со временем, мы поняли что задачи, которые ставят перед нами клиенты, часто выходят за рамки  юридических вопросов в сфере коммерческой недвижимости и иногда касаются гражданского или даже уголовного права. Поэтому мы нашли специалистов с успешной практикой в данных областях, чтобы качественно оказывать полный спектр необходимых услуг.</p></div>
               <div class="action">
                 <div class="page-logo"><img src="img/pics/logo.png" alt="<?php echo $app['title']; ?>"></div>
               </div>
@@ -276,7 +278,7 @@ UtmCookie::setLifetime($dateInterval);
                 Москва
                 <br/>
                 Черноморский бульвар, д.4
-              </p><a class="link -phone" href="tel:84955041917" title="Позвоните нам бесплатно">8 495 504 19 17</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a>
+              </p><a class="link -phone" href="tel:84956659224" title="Позвоните нам бесплатно">8 495 665 92 24</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a>
             </div>
             <div class="column -xs-12 -md-5 -lg-4 -lg-offset-1">
                   <form class="page-form -footer" method="post" action="form.php">
@@ -317,7 +319,7 @@ UtmCookie::setLifetime($dateInterval);
       <div class="modal"><span class="close js-modalClose"></span>
         <div class="container">
           <div class="row _justify-center">
-            <div class="column -xs-6 _text-center">
+            <div class="column -xs-12 -md-6 _text-center">
               <div class="page-logo"><img src="img/pics/logo-white.png" alt="<?php echo $app['title']; ?>"></div>
                   <form class="page-form -modal" method="post" action="form.php">
                     <div class="form">
@@ -345,7 +347,6 @@ UtmCookie::setLifetime($dateInterval);
       </div>
     </div>
     <div class="scripts">
-      <script src="https://maps.google.com/maps/api/js"></script>
       <script src="js/app.js"></script>
       <!-- Google Analytics-->
       <script>

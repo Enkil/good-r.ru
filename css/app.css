@@ -1269,12 +1269,12 @@ h2.h2-title {
 
 div.text p {
   font-family: 'Calibri-Regular',sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: normal;
   font-style: normal;
-  line-height: 48px;
+  line-height: 32px;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -3763,6 +3763,10 @@ form.page-form button:active {
   .lead-banner {
     margin-top: 0;
   }
+
+  a.btn span {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 33.74em) {
@@ -3788,10 +3792,6 @@ form.page-form button:active {
 }
 
 @media (max-width: 21.25em) {
-  a.btn span {
-    font-size: 30px;
-  }
-
   figure.service-block figcaption.caption .btn span {
     font-size: 18px;
   }

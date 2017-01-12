@@ -18,11 +18,11 @@ $app['facebookPixel'] = '';
 
 $settings['sypexGeoApiKey'] = 'Agxqu';
 
-$settings['smsRecipietns'] = '';
-$settings['smsRuApiKey'] = '';
+$settings['smsRecipietns'] = '79267542575';
+$settings['smsRuApiKey'] = '6F82B7B5-59C6-8209-6146-8F47FA2BC60A';
 $settings['smsMessage'] = " ";
 
-$settings['EmailRecipients'] = ['timohin.i@gmail.com','office@good-r.ru'];
+$settings['EmailRecipients'] = ['timohin.i@gmail.com',''];
 $settings['EmailReplyTo'] = ['office@good-r.ru'];
 $settings['EmailFrom'] = "office@good-r.ru";
 $settings['EmailSubject'] = "Новая заявка с сайта ". $_SERVER['SERVER_NAME'] ."";

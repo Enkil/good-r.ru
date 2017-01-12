@@ -1,3 +1,17 @@
+<?php
+
+require_once ('vendor/autoload.php');
+require_once ('settings.php');
+
+// UTM
+use UtmCookie\UtmCookie;
+UtmCookie::init();
+UtmCookie::setName('president_utm');
+UtmCookie::setOverwrite(true);
+$dateInterval = DateInterval::createFromDateString('1 day');
+UtmCookie::setLifetime($dateInterval);
+?>
+
 <!DOCTYPE html>
 <html lang="ru" prefix="og: http://ogp.me/ns#">
   <head>
@@ -104,7 +118,7 @@
             <div class="page-logo"><img src="img/pics/logo.png" alt="<?php echo $app['title']; ?>"></div>
           </div>
           <div class="column -xs-8 -md-3">
-            <div class="contacts"><a class="link -phone" href="tel:88006005454" title="Позвоните нам бесплатно">8 495 504 19 17</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a></div>
+            <div class="contacts"><a class="link -phone" href="tel:88006005454" title="Позвоните нам бесплатно">8 800 600 54 54</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a></div>
           </div>
           <div class="column -xs-7 _pr0 _pl0 -xs-stretch _sm-hidden-down">
             <ul class="menu">
@@ -120,42 +134,12 @@
       </div>
     </header>
     <main>
-      <div class="lead-banner">
-        <div class="container _h100">
-          <div class="row _h100">
-            <div class="column -xs-12 -md-5 _d-flex _justify-right _align-center">
-              <div class="logo">
-                <div class="page-logo"><img src="img/pics/logo-white.png" alt="<?php echo $app['title']; ?>"></div>
-              </div>
-            </div>
-            <div class="column -xs-12 -md-6 _d-flex _justify-right _align-bottom">
-              <div class="text"><span>Когда работа</span><span>приносит</span><span>удовольствие</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="page-text">
-        <div class="container">
-          <div class="row">
-            <div class="column -xs-12">
-                    <h2 class="h2-title" id="emergency">Экстренная кнопка</h2>
-                    <div class="text"><p>В жизни человека часто случаются ситуации, когда  консультация и поддержка необходимы незамедлительно. Именно для этого и создана <span class="attention">«Красная кнопка»</span>. Мы максимально быстро, без лишних вопросов займемся  вашей задачей и, пройдя с вами все этапы, выполним её в кратчайшие сроки. Мы сами не раз сталкивались с необходимостью срочно решить проблему, но теряли много времени на ненужные действия. Поэтому,ценим время наших клиентов, предлагая только проверенные решения</p></div>
-            </div>
-          </div>
-          <div class="row _justify-center">
-            <div class="column -xs-8 -md-6 -lg-4">
-              <div class="action"><a class="btn js-openModal" href="javascript:void(0)" title="НАЖМИТЕ" id=""><span>НАЖМИТЕ</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="page-text">
         <div class="container">
           <div class="row">
             <section class="column -xs-12">
-                    <h2 class="h2-title" id="about">О НАС</h2>
-                    <div class="text"><p>«Бизнес Решения» приветствуют Вас на нашем сайте.</p><p> Мы  молодая, активно развивающая компания в сфере консалтинга коммерческой недвижимости и оказания юридических услуг.  Несколько лет назад мы сами нуждались в помощи при выкупе помещения у Департамента городского имущества города Москвы и в соответствующих юридических консультациях. Не найдя хороших специалистов и самостоятельно пройдя весь путь от начала и до конца, было принято решение создать «Бизнес Решения» и оказывать квалифицированную помощь в данной области всем нуждающимся людям.</p><p>Со временем, мы поняли что задачи, которые ставят перед нами клиенты, часто выходят за рамки  юридических вопросов в сфере коммерческой недвижимости и иногда касаются гражданского или даже уголовного права. Поэтому мы нашли специалистов с успешной практикой в данных областях, чтобы качественно оказывать полный спектр необходимых услуг.</p></div>
+              <h2 class="h2-title" id="agreement">Соглашение об обрабтке персональных данных</h2>
+              <div class="text"><p>Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской Федерации.<br><br>Все лица заполнившие сведения, составляющие персональные данные на данном сайте, а также разместившие иную информацию обозначенными действиями подтверждают свое согласие на обработку персональных данных и их передачу оператору обработки персональных данных.<br><br>Под персональными данными Гражданина понимается нижеуказанная информация:<br><br>общая информация (Имя, телефон и адрес электронной почты); посетители сайта направляют свои персональные данные для получения услуг расчёта стоимости заказа.<br><br>Гражданин, принимая настоящее Соглашение, выражают свою заинтересованность и полное согласие, что обработка их персональных данных может включать в себя следующие действия: сбор, систематизацию, накопление, хранение, уточнение(обновление, изменение), использование, уничтожение.<br><br>Гражданин гарантирует: информация, им предоставленная, является полной, точной и достоверной; при предоставлении информации не нарушается действующее законодательство Российской Федерации, законные права и интересы третьих лиц; вся предоставленная информация заполнена Гражданина в отношении себя лично.</p></div>
               <div class="action">
                 <div class="page-logo"><img src="img/pics/logo.png" alt="<?php echo $app['title']; ?>"></div>
               </div>
@@ -263,7 +247,7 @@
                 Москва
                 <br/>
                 Черноморский бульвар, д.4
-              </p><a class="link -phone" href="tel:88006005454" title="Позвоните нам бесплатно">8 495 504 19 17</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a>
+              </p><a class="link -phone" href="tel:88006005454" title="Позвоните нам бесплатно">8 800 698 54 54</a><a class="link -email" href="mailto:office@good-r.ru" title="Напишите нам">office@good-r.ru</a>
             </div>
             <div class="column -xs-12 -md-5 -lg-4 -lg-offset-1">
                   <form class="page-form -footer" method="post" action="form.php">

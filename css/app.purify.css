@@ -1235,6 +1235,11 @@ form.page-form button:active {
   align-items: center;
 }
 
+.modal-block .page-logo img {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .modal-block .modal {
   position: relative;
   box-sizing: border-box;
@@ -2514,7 +2519,7 @@ form.page-form button:active {
 
 @media (max-width:21.25em) {
   figure.service-block figcaption.caption .btn span {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 

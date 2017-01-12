@@ -2007,7 +2007,7 @@ form.page-form button:active {
 
 @media (min-width: 33.75em) and (max-width: 80em) {
   figure.service-block figcaption.caption .text p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -2029,7 +2029,7 @@ form.page-form button:active {
 
 @media (min-width: 50em) and (max-width: 63.99em) {
   .page-header .contacts a.link.-phone {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .page-header .contacts a.link.-email {
@@ -3771,7 +3771,7 @@ form.page-form button:active {
   }
 
   figure.service-block figcaption.caption .text p {
-    font-size: 26px;
+    font-size: 12px;
   }
 
   figure.service-block figcaption.caption .btn span {
